@@ -9,13 +9,6 @@ puts "Exercise 6"
 puts "----------"
 
 # Your code goes here ...
-# class Store < ApplicationRecord
-#   has_many :employees
-# end
-
-# class Employee < ApplicationRecord
-#   belongs_to :Store
-# end
 puts Store.has_many(:employees)
 puts Employee.belongs_to(:store)
 @store1.employees.create(first_name: "Khurram", last_name: "Virani", hourly_rate: 60)
